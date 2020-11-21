@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee ../../../testapp/ejb-jar_3_0.xsd ">
+    <enterprise-beans>
+        <session>
+    <ejb-name>AssignmentSB</ejb-name>
+    <env-entry>
+        <env-entry-name>AGEMIN</env-entry-name>
+        <env-entry-type>java.lang.Integer</env-entry-type>
+        <env-entry-value>18</env-entry-value>
+        <injection-target>
+            <injection-target-class>jira.beansessions.AssignmentSB</injection-target-class>
+            <injection-target-name>AGEMIN</injection-target-name>
+        </injection-target>
+    </env-entry>
+            <env-entry>
+        <env-entry-name>AGEMAX</env-entry-name>
+        <env-entry-type>java.lang.Integer</env-entry-type>
+        <env-entry-value>68</env-entry-value>
+        <injection-target>
+            <injection-target-class>jira.beansessions.AssignmentSB</injection-target-class>
+            <injection-target-name>AGEMAX</injection-target-name>
+        </injection-target>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>LIMITEMP</env-entry-name>
+                <env-entry-type>java.lang.Integer</env-entry-type>
+                <env-entry-value>4</env-entry-value>
+                <injection-target>
+                    <injection-target-class>jira.beansessions.AssignmentSB</injection-target-class>
+                    <injection-target-name>LIMITEMP</injection-target-name>
+                </injection-target>
+            </env-entry>
+
+
+ </session>
+</enterprise-beans>
+        </ejb-jar>
