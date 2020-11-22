@@ -35,7 +35,10 @@ This project used Glassfish and pgAdmin to work.
 
 Furthermore, Java 8 is needed !!
 
-To make easier the compilations and the execution of the client, bashing script are available. However notice, in case the Server is compiled again, you need to copy this new version inside `\Client\`!
+Before doing any test, do not forget to configure the file `Server\META-INF\persistance.xml` ! ***(jta-data-source, properties etc..)***
+
+
+To make easier the compilations and the execution of the client, bashing script are available. However notice, in case the Server is compiled again, you need to copy this new version of the .jar inside `\Client\`! Do not forget also to upload this new version on Glassfish !
 
 Furthermore, to simplify the test with the client, a file `code.sql` contains the SQL code to create the tables used and to initialize them as well as reinitialize them if needed !
 
@@ -75,7 +78,24 @@ In order to use the methods defined in these Bean Sessions by the Clients, 4 rem
 
 ### Exception
 
+In addition, custom exceptions are handled about :
+- Age of the Employee to be assigned :
+  - `AGEMIN`: Minimum age required to be assigned
+  - `AGEMAX`: Maximum age required to be assigned
+- The maximum number of Employees that can be assigned to a Department :
+  - `LIMITEMP`
+  
+These thresholds values can be configured inside `Server\META-INF\ejb-jar.xml`.
+
 
 ## Client
+
+In order to test the previous implementation , a Client has been also designed into `Client\`.
+
+To launch the Client, open a console and then execute the `client.bat` (Windows only).
+
+Because the code try the 3 exceptions, you may need to comment/uncomment exceptions to verify !
+
+If an error occurs during the execution, do not forget to reinitialize the initial values in the database (see `\code.sql`) to prevent MARSHAL error due to methods on an entity that have been removed, or the creation of an entity already created !
 
 
