@@ -89,6 +89,8 @@ In addition, custom exceptions are handled about :
   
 These thresholds values can be configured inside `Server\META-INF\ejb-jar.xml`.
 
+***NOTE: For these exceptions, if one is raised, the whole transaction is cancelled !***
+
 
 ## Client
 
