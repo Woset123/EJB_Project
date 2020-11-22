@@ -42,6 +42,8 @@ To make easier the compilations and the execution of the client, bashing script 
 
 Furthermore, to simplify the test with the client, a file `code.sql` contains the SQL code to create the tables used and to initialize them as well as reinitialize them if needed !
 
+***Note : A non-exhaustive Java Documentation has been generated in the directory `Documentation` if needed.***
+
 
 
 ## Server
