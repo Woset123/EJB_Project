@@ -25,7 +25,7 @@ Project done to provide solutions, for a company operating in the medical sector
 
 ***Note : An employee can only be assigned to one Department***
 
-***Note2 : In this project, a fake Department whose id equals '0' has been created to store Employees who do not have been assigned yet to a Department. In addition, for this specific Department, its attribut 'nbemployee' will not be updated.***
+***Note2 : In this project, a fake Department whose id equals to '0' has been created to store Employees who do not have been assigned yet to a Department. In addition, for this specific Department, its attribut 'nbemployee' will not be updated.***
 
 This EJB has some constraints that can be configured in `Server\META-INF\ejb-jar.xml`. These constraints are about the minimum and maximal age and the maximum number of employees possible inside a Department.
 
