@@ -38,7 +38,7 @@ Furthermore, Java 8 is needed !!
 Before doing any test, do not forget to configure the file `Server\META-INF\persistance.xml` ! ***(jta-data-source, properties etc..)***
 
 
-To make easier the compilations and the execution of the client, bashing script are available. However notice, in case the Server is compiled again, you need to copy this new version of the .jar inside `\Client\`! Do not forget also to upload this new version on Glassfish !
+To make easier the compilations and the execution of the client on Windows, batching scripts are available. However notice, in case the Server is compiled again, you need to copy this new version of the .jar inside `\Client\`! Do not forget also to upload this new version on Glassfish !
 
 Furthermore, to simplify the test with the client, a file `code.sql` contains the SQL code to create the tables used and to initialize them as well as reinitialize them if needed !
 
