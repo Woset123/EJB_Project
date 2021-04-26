@@ -10,7 +10,7 @@ import javax.naming.NamingException;
 
 
 public class Client {
-
+// text
     private IDepartmentManagement dptmanagement;
     private IEmployeeManagement empmanagement;
     private IAssignment assign;

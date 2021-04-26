@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ServerJIRA1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Server/ServerJIRA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
